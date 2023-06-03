@@ -3,3 +3,4 @@ swaylock-effects
 preload
 ly-git
 jetbrains-toolbox
+swaybg
