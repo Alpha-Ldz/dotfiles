@@ -29,7 +29,6 @@ i3status-rust
 intel-media-driver
 intel-ucode
 iwd
-jetbrains-toolbox
 jupyter-notebook
 kube-apiserver
 kube-controller-manager
@@ -43,7 +42,6 @@ light
 linux
 linux-firmware
 lsof
-ly-git
 mpv
 nano
 neovim
@@ -52,7 +50,6 @@ networkmanager
 npm
 pavucontrol
 postgresql
-preload
 pulseaudio
 pulseaudio-bluetooth
 python-pip
@@ -64,8 +61,6 @@ smartmontools
 spotify-launcher
 sway
 swayidle
-swaylock-effects
-swaync
 thunar
 tk
 tree
