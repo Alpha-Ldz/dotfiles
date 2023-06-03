@@ -1,6 +1,6 @@
 #/bin/ssh
 
-sudo pacman -S ~/.config/initSession/packages.txt
+sudo pacman -S - < ~/.config/initSession/packages.txt
 
 (cd ~/.local/share/chezmoi/ && git remote remove origin)
 (cd ~/.local/share/chezmoi/ && git remote add origin git@github.com:Alpha-Ldz/dotfiles.git)
