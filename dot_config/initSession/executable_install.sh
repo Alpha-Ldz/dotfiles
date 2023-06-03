@@ -1,6 +1,7 @@
 #/bin/ssh
 
-sudo pacman -Syyu
+(cd ~/.local/share/chezmoi/ && git remote remove origin)
+(cd ~/.local/share/chezmoi/ && git remote add origin git@github.com:Alpha-Ldz/dotfiles.git)
 
 mkdir ~/Documents
 mkdir ~/Documents/Git
@@ -12,7 +13,12 @@ mkdir ~/Documents/Git
 yay -S --needed --noconfirm - < ~/.config/initSession/packages.txt
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf ~/.zshrc
+mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 
-sudo systemctl enable ly.service
+sudo systemctl enable ly.service preload.service
 
 sudo reboot
