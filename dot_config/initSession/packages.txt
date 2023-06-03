@@ -61,6 +61,7 @@ smartmontools
 spotify-launcher
 sway
 swayidle
+swaybg
 thunar
 tk
 tree
