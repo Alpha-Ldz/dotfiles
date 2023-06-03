@@ -1,0 +1,5 @@
+swaync
+swaylock-effects
+preload
+ly-git
+jetbrains-toolbox
