@@ -1,0 +1,61 @@
+@theme "theme.rasi"
+
+window {
+  font: "Dosis,Phosphor 16";
+  transparency: "real";
+  background-color: @bg-col;
+  text-color: @fg-col;
+  border-color: @selected-col;
+  border-radius: 0.3em;
+  width: 4em;
+  x-offset: 42em;
+}
+
+textbox-prompt-colon, entry, prompt, inputbar {
+  enabled: false;
+}
+
+listview {
+  background-color: @bg-col;
+  columns: 1;
+  lines: 5;
+  spacing: 0.2em;
+  cycle: false;
+  layout: vertical;
+}
+
+mainbox {
+  background-color: @bg-col;
+  spacing: 0.15em;
+  padding: 0.38em;
+}
+
+element {
+  background-color: @bg-col-light;
+  text-color: @fg-col;
+  orientation: horizontal;
+  border-color: @selected-col;
+  border-radius: 0.3em;
+  padding: 1em 1em 0.9em 1.05em;
+}
+
+element-icon {
+  background-color: inherit;
+  text-color: inherit;
+  enabled: false;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+  font: "Phosphor 25";
+  expand: true;
+}
+
+element selected {
+  background-color: @selected-col;
+  border-radius: 0.3em;
+  text-color: @fg-col2;
+}
+
+// vim:filetype=rasi
