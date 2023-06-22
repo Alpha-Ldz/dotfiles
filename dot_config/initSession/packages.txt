@@ -7,7 +7,6 @@ blueman
 bluez-utils
 chezmoi
 cmake
-dbeaver
 dhcpcd
 dmenu
 docker
