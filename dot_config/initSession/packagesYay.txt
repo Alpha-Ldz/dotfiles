@@ -1,5 +1,8 @@
 swaync
-swaylock-effects
 preload
 ly-git
 jetbrains-toolbox
+kafka
+apache-spark
+ttf-firacode-nerd
+all-repository-fonts

@@ -17,3 +17,23 @@ vim.cmd [[ set noswapfile ]]
 
 --Line numbers
 vim.wo.number = true
+
+local opts = { noremap = true, silent = true }
+local keymap = vim.api.nvim_set_keymap
+
+keymap("n","<C-n>", "<cmd> Neotree source=filesystem reveal=true position=left<CR>", opts)
+
+-- vim.keymap.set('<C-n>', "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" )
+
+--local M = {}
+--M.nvimtree = {
+--	plugin = true,
+--
+--	n = {
+--		-- toggle
+--		["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+--
+--		-- focus
+--		["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
+--	}
+--}

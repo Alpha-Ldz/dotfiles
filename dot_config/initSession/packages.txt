@@ -1,3 +1,7 @@
+kitty
+hyprland
+python-pipx
+
 alacritty
 base
 base-devel
@@ -42,15 +46,12 @@ linux
 linux-firmware
 lsof
 mpv
-nano
 neovim
 network-manager-applet
 networkmanager
 npm
 pavucontrol
 postgresql
-pulseaudio
-pulseaudio-bluetooth
 python-pip
 rofi
 scrot

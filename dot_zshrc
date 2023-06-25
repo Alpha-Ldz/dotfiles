@@ -13,6 +13,8 @@ ZSH_THEME="gnzh"
 [[ -s "/home/dudette/.sdkman/bin/sdkman-init.sh" ]] && source "/home/dudette/.sdkman/bin/sdkman-init.sh"
 
 alias vim=nvim
+alias pip=pipx
+
 alias yayI="yay -S --needed --noconfirm"
 
 # Set list of themes to pick from when loading at random
@@ -113,3 +115,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+
+# Created by `pipx` on 2023-06-22 21:53:26
+export PATH="$PATH:/home/peuleu/.local/bin"

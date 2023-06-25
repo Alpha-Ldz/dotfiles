@@ -14,15 +14,31 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  --treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+  }
+
+  --treefile
+  use {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = { 
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  }
+
+  --lightspeed
   use 'ggandor/lightspeed.nvim'
 
   -- auto Pairs
   use "windwp/nvim-autopairs"
-
-  -- rainbow lines
-  use "lukas-reineke/indent-blankline.nvim"
-
-  use 'fedepujol/bracketpair.nvim'
 
   if packer_bootstrap then
     require('packer').sync()
