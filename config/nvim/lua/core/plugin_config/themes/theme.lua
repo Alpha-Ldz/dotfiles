@@ -1,0 +1,1 @@
+/home/peuleu/.config/nvim/lua/core/plugin_config/themes/Tokyo-Night.lua
