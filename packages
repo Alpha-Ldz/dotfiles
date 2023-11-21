@@ -13,6 +13,6 @@ unzip
 fd
 ripgrep
 tree
-find
 python-pip
+jq
 
