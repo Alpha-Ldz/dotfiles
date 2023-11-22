@@ -1,18 +1,10 @@
-rofi
-neovim
-kitty
+rofi neovim kitty
 
 #yay
-swww
-thorium-browser-bin
+swww thorium-browser-bin
 
 #vim dependencies
+npm unzip fd ripgrep tree python-pip jq
 
-npm
-unzip
-fd
-ripgrep
-tree
-python-pip
-jq
-
+#kvm
+virt-manager virt-viewer qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf swtpm
