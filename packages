@@ -1,10 +1,10 @@
 rofi neovim kitty zsh
 
 #yay
-swww thorium-browser-bin ttf-firacode-nerd 
+swww thorium-browser-bin ttf-firacode-nerd wd719x-firmware upd72020x-fw aic94xx-firmware 
 
 #vim dependencies
 npm unzip fd ripgrep tree python-pip jq
 
 #kvm
-virt-manager virt-viewer qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf swtpm
+virt-manager virt-viewer qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf swtpm linux-firmware-qlogic
