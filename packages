@@ -1,7 +1,7 @@
 rofi neovim kitty zsh
 
 #yay
-swww thorium-browser-bin
+swww thorium-browser-bin ttf-firacode-nerd 
 
 #vim dependencies
 npm unzip fd ripgrep tree python-pip jq
