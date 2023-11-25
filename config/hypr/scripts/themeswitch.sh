@@ -29,3 +29,8 @@ swww img $ConfDir/wallpapers/${ThemeSet}.jpg \
     --transition-fps 120 \
     --invert-y \
     --transition-pos "$( hyprctl cursorpos )"
+
+#gtk 3
+sed -i "/^gtk-theme-name=/c\gtk-theme-name=${ThemeSet}" $ConfDir/gtk-3.0/settings.ini
+
+flatpak --user override --env=GTK_THEME="${ThemeSet}"
