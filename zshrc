@@ -17,6 +17,10 @@ alias vim=nvim
 
 alias yayI="yay -S --needed --noconfirm"
 
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -115,5 +119,3 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 
-# Created by `pipx` on 2023-06-22 21:53:26
-export PATH="$PATH:/home/peuleu/.local/bin"
